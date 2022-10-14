@@ -5,6 +5,7 @@ for (let i = 0; i < 10; i++) {
 let array1 = ["Denilson", "Andres", "Meliza", "Juan"];
 let array2 = ["Prescott", "Medina", "Paba", array1];
 
+
 for (let array in array2) {
 	if(array == 3) {
 		for(let array of array1) {
@@ -84,61 +85,51 @@ perro.setRaza = "Cocker";
 // perro.ladrar();
 // ave.verInfo();
 
+// Metodos de cadenas
+let cadena = "primera cadena prueba prueba prueba";
+let cadena2 = "segunda cadena ";
+let cadena3 = "   primera   ";
+let cadena4 = "prueba";
+let cadena5 = "ABCDEFGHIJKLMNÑOPQRSUVXYZ";
+let numero = "123456789";
+//concat
+// resultado = cadena.concat(cadena2);
+//startsWith
+// resultado = cadena.startsWith(cadena3);
+//endsWith
+// resultado = cadena.endsWith(cadena4);
+//includes
+// resultado = cadena.includes(cadena3);
+//indexOf
+// resultado = cadena.indexOf(cadena3);
+//lastIndexOf
+// resultado = cadena.lastIndexOf(cadena4);
+//padStart
+// resultado = cadena3.padStart(15, "D");
+//padEnd
+// resultado = cadena3.padEnd(15, "D");
+//repeat
+// resultado = cadena2.repeat(3);
+//split
+// resultado = cadena.split(" ");
+//substring
+// resultado = cadena5.substring(0, 30);
+//toLowerCase
+// resultado = cadena5.toLowerCase();
+//toUpperCase
+// resultado = cadena.toUpperCase();
+//toString
+// resultado = numero.toString();
+//trim
+// resultado = cadena3.trim();
+//trimStart
+// resultado = cadena3.trimStart();
+//trimEnd
+// resultado = cadena3.trimEnd();
 
-// Ejercicio 2
+// document.write(resultado);
+// document.write(resultado.length);
+// document.write(resultado + 33);
 
-class celulares{
-	constructor(color, peso, rdp, rdc, ram){
-		this.color = color;
-		this.peso = peso;
-		this.resolucionPantalla = rdp;
-		this.resolucionCamara = rdc;
-		this.memoriaRam = ram;
-		this.encedido = false;
-	}
-	botonEncendido(){
-		if (this.encedido == false) {
-			alert("Celular prendido");
-			this.encedido = true;
-		} else {
-			alert("Celular apagado");
-			this.encedido = false;
-		}
-	}
-	reiniciar(){
-		if (this.encedido == true) {
-			alert("Reiniciando celular");
-		} else {
-			alert("El celular ya esta apagado");
-		}
-	}
-	tomarFoto(){
-		alert(`Foto tomada con la resolucion de: ${this.resolucionCamara}`);
-	}
-	grabarVideo(){
-		alert(`Grabando video en resolucion ${this.resolucionCamara}`);
-	}
-	info(){
-		return `
-			Color: <b>${this.color}</b><br>
-			Peso: <b>${this.peso}</b><br>
-			Tamaño: <b>${this.resolucionPantalla}</b><br>
-			Resolucion de camara: <b>${this.resolucionCamara}</b><br>
-			Memoria RAM: <b>${this.memoriaRam}</b><br>
-		`;
-	}
-}
 
-class celularesAltaGama{
-	constructor(color, peso, rdp, rdc, ram)
-}
-
-motorola = new celulares("Negro", "150g", "5'", "Full HD", "2GB");
-samsung = new celulares("Blanco", "155g", "5.4", "HD", "3GB");
-iphone = new celulares("Gris", "140g", "5.9", "Full HD", "4GB");
-
-// document.write(`
-// 	${motorola.info()} <br>
-// 	${samsung.info()} <br>
-// 	${iphone.info()} <br>
-// 	`);	
+//Metodos de Array
