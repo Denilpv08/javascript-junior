@@ -126,10 +126,141 @@ let numero = "123456789";
 // resultado = cadena3.trimStart();
 //trimEnd
 // resultado = cadena3.trimEnd();
-
 // document.write(resultado);
 // document.write(resultado.length);
 // document.write(resultado + 33);
 
-
 //Metodos de Array
+//------------------------Transformadores-------------------------------------
+//pop()
+const miArray = ["Andres", "Denilson", "Meliza", "Juan"];
+const miNumeros = [2,4,6,7,1,3,9,8,5];
+// document.write(`Array original: <b>${miArray}</b><br>`);
+// let total = miArray.pop();
+// document.write(`Elemento removido: <b style="color: red">${total}</b><br>`);
+// document.write(`Resultado: <b>${miArray}</b>`);
+//shift()
+// document.write(`Array original: <b>${miArray}</b><br>`);
+// let total = miArray.shift();
+// document.write(`Elemento removido: <b style="color: red">${total}</b><br>`);
+// document.write(`Resultado: <b>${miArray}</b>`);
+//push()
+// document.write(`Array original: <b>${miArray}</b><br>`);
+// let total = miArray.push("Yesmin");
+// document.write(`Elemento Agregado: <b style="color: green">${total}</b><br>`);
+// document.write(`Resultado: <b>${miArray}</b>`);
+//reverse()
+// document.write(`Array original: <b>${miArray}</b><br>`);
+// let total = miArray.reverse();
+// document.write(`Orden de elementos: <b style="color: blue">${total}</b><br>`);
+//unshift()
+// document.write(`Array original: <b>${miArray}</b><br>`);
+// let total = miArray.unshift("Guissep");
+// document.write(`Elemento agregado: <b style="color: green">${total}</b><br>`);
+// document.write(`Resultado: <b>${miArray}</b>`);
+//sort()
+// document.write(`Array original: <b>${miNumeros}</b><br>`);
+// let total = miNumeros.sort();
+// document.write(`Ordenando elementos: <b style="color: blue">${total}</b><br>`);
+//splice()
+//---------------Eleminado elementos--------------------
+// document.write(`Array original: <b>${miArray}</b><br>`);
+// let total = miArray.splice(1,2);
+// document.write(`Elemento removido: <b style="color: red">${total}</b><br>`);
+// document.write(`Resultado: <b>${miArray}</b><br>`);
+//---------------Agregando elementos---------------------
+// let agregar = miArray.splice(0, 0, "Maria", "Anyely");
+// document.write(`Elemento agregado: <b style="color: green">${agregar}</b><br>`);
+// document.write(`Resultado: <b>${miArray}</b><br>`);
+
+//------------------------Accesores-------------------------------------
+//join()
+// document.write(`${miArray} <br>`);
+// let total = miArray.join(" / ");
+// document.write(`Convirtiendo en una cadena de texto: <b>${total}</b>`);
+//slice()
+// document.write(`Mi arrray original: <b>${miArray}</b><br>`);
+// let total = miArray.slice(0, -1);
+// document.write(`Mostrando elementos: <b>${total}</b>`);
+
+//------------------------De Repetición-------------------------------------
+//filter() - Blucles de un array y su parametro sera una funcion
+// miArray.filter(array => {
+// 	document.write(`${array} <br>`);
+// });
+//---------------------filter con condicionales------------------------
+// total = miArray.filter(array => array.length > 4);
+// document.write(`${total}<br>`);
+//forEach() - Bucle de un array muy similar a filter 
+//  miArray.forEach(array => {
+// 	document.write(`${array} <br>`);
+// });
+
+//Objecto Math - Básico
+//------------------------Metodos------------------------------------------
+//sqrt()
+// numeros = Math.sqrt(25);
+// console.log(numeros);
+//cbrt()
+// numeros = Math.cbrt(25);
+// console.log(numeros);
+//max()
+// numeros = Math.max(25, 34, 56, 1, 567 ,322, 3092);
+// console.log(numeros);
+//min()
+// numeros = Math.min(25, 34, 56, 1, 567 ,322, 3092);
+// console.log(numeros);
+//random()
+// numeros = Math.random() * 100;
+// numeros = numeros.toString();
+// num = numeros[0] + numeros[1];
+// if (numeros[1] == ".") {
+// 	num = numeros[0];
+// }
+// console.log(num);
+//round()
+// let numeros = Math.random() * 100;
+// numeros = Math.round(numeros);
+// document.write(numeros);
+//floor()
+// numeros = Math.floor(4.657);
+// document.write(numeros);
+// for (let i = 0; i < 100; i++) {
+// 	let numeros = Math.random() * 99;
+// 	numeros = Math.floor(numeros + 1);
+// 	document.write(numeros + "<br>");
+// }
+//fround()
+// numeros = Math.fround(4.9999999999);
+// document.write(numeros);
+//trunc()
+// numeros = Math.trunc(4.957);
+// document.write(numeros);
+
+//---------------------------Propiedades-----------------------------------
+//PI
+// let numeros = Math.PI;
+// document.write(numeros);
+//SQRT1_2
+// let numeros = Math.SQRT1_2;
+// document.write(numeros);
+//SQRT2
+// let numeros = Math.SQRT2;
+// document.write(numeros);
+//E
+// let numeros = Math.E;
+// document.write(numeros);
+//LN2
+// let numeros = Math.LN2;
+// document.write(numeros);
+//LN10
+// let numeros = Math.LN10;
+// document.write(numeros);
+//LOG2E
+// let numeros = Math.LOG2E;
+// document.write(numeros);
+//LOG10E
+// let numeros = Math.LOG10E;
+// document.write(numeros);
+
+//Ejercicio 3
