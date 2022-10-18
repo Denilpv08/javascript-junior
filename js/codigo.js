@@ -263,4 +263,3 @@ const miNumeros = [2,4,6,7,1,3,9,8,5];
 // let numeros = Math.LOG10E;
 // document.write(numeros);
 
-//Ejercicio 3

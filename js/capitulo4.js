@@ -127,3 +127,69 @@ document.write(cantidadAlumnos(`Andres`));
 document.write(cantidadAlumnos(`Maria`));
 document.write(cantidadAlumnos(`Juan`));
 document.write(cantidadAlumnos(`Meliza`));
+
+//Ejercicio 3
+materias = {
+		fisica: ["Campo", "Denilson", "Andres", "Maria", "Juan", "Meliza"],
+		programacion: ["Carmen", "Denilson", "Andres", "Meliza"],
+		matematicas: ["Pinto", "Denilson", "Andres", "Maria", "Juan", "Meliza"],
+		deportes: ["Poncho", "Denilson", "Maria", "Juan", "Meliza"]
+	}
+
+const inscribir = (alumno, materia) => {
+	personas = materias[materia];
+	if (personas.length >= 21) {
+		document.write(`Lo siento ${alumno}, las clases de ${materia} ya estan llenas <br><br>`);
+	} else {
+		personas.push(alumno);
+		if(materia == "fisica"){
+			materias = {
+				fisica: personas,
+				programacion: materias['programacion'],
+				matematicas: materias['matematicas'],
+				deportes: materias['deportes']
+			}
+		}else if(materia == "programacion"){
+			materias = {
+				fisica: materias['fisica'],
+				programacion: personas,
+				matematicas: materias['matematicas'],
+				deportes: materias['deportes']
+			}
+		}else if(materia == "matematicas"){
+			materias = {
+				fisica: materias['fisica'],
+				programacion: materias['programacion'],
+				matematicas: personas,
+				deportes: materias['deportes']
+			}
+		}else if(materia == "deportes"){
+			materias = {
+				fisica: materias['fisica'],
+				programacion: materias['programacion'],
+				matematicas: materias['matematicas'],
+				deportes: personas
+			}
+		}
+		document.write(`¡Felicidades ${alumno}! te has inscrito a ${materia} correctamente <br>`);
+	}
+}
+
+document.write(materias['fisica'] + "<br>");
+inscribir("Yesmin", "fisica");
+inscribir("Carlos", "fisica");
+inscribir("Miguel", "fisica");
+inscribir("Andrea", "fisica");
+inscribir("Fernanda", "fisica");
+inscribir("Elena", "fisica");
+inscribir("Daniel", "fisica");
+inscribir("Daniela", "fisica");
+inscribir("Ana", "fisica");
+inscribir("Pipe", "fisica");
+inscribir("Camila", "fisica");
+inscribir("Camilo", "fisica");
+inscribir("Cofla", "fisica");
+inscribir("Wendy", "fisica");
+inscribir("Angie", "fisica");
+inscribir("Fabian", "fisica");
+document.write("<br>" + materias['fisica']);
