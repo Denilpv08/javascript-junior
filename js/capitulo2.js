@@ -1,7 +1,35 @@
+for (let i = 0; i < 10; i++) {
+	document.write(i + `<br>`);
+}
+let array1 = ["Denilson", "Andres", "Meliza", "Juan"];
+let array2 = ["Prescott", "Medina", "Paba", array1];
+
+for (let array in array2) {
+	if(array == 3) {
+		for(let array of array1) {
+			document.write(array + `<br>`);
+		}
+	}else{
+		document.write(array2[array] + `<br>`);
+	}
+}
+
+function suma(num1, num2){
+	let result = num1 + num2;
+	document.write(result);
+}
+
+// Funcion flecha
+const suma =(num1, num2)=>{
+	let result = num1 + num2;
+	document.write(result);	
+}
+suma(14, 26);
+
+
 //Ejercicio 
 
 let free = false;
-
 const validarEntrada = (time)=>{
 	let edad = prompt("¿Que edad tienes?");
 	if (edad > 18) {
@@ -15,13 +43,11 @@ const validarEntrada = (time)=>{
 		alert("No puedes pasar eres menor de edad");
 	}
 }
-
 validarEntrada(10);
 validarEntrada(6);
 validarEntrada(2);
 validarEntrada(1);
 validarEntrada(3);
-
 
 //Ejercicio 2 
 

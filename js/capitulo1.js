@@ -1,4 +1,16 @@
-//Capitulo 1 Ejercicio
+function saludar(){
+	respuesta = prompt("Hola! Como estas?");
+	if (respuesta == "bien") {
+		alert("Me alegra mucho");
+	}else{
+		alert("Lo siento :(");
+	}
+}
+saludar();
+
+
+//Ejercicio
+
 const definirCompra = (n) =>{
 	let din = prompt(`Dinero de ${n}`);
 	if (din >= 0.6 && din < 1) return (`${n}: helado de agua`)
@@ -15,7 +27,6 @@ const definirCompra = (n) =>{
 		// (`El dinero que te sobra es ${(din - 2.9)}`);
 	else return (`${n}: No te alcanza para comprar un helado`);
 }
-
 console.log(definirCompra("Cofla"));
 console.log(definirCompra("Roberto"));
 console.log(definirCompra("Pedro"));

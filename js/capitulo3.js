@@ -1,3 +1,47 @@
+//Relacion a objectos
+
+class animal {
+	constructor(especie, edad, color) {
+		this.especie = especie;
+		this.edad = edad;
+		this.color = color;
+		this.info = `Soy ${this.especie}, tengo ${this.edad} años
+							y soy de color ${this.color}`;
+	}
+	verInfo(){
+		document.write(this.info + `<br>`);
+	}
+}
+
+//Herencias
+class dog extends animal{
+	constructor(especie, edad, color, raza){
+		super(especie, edad, color);
+		this.raza = raza;
+	}
+	//Metodo static
+	static ladrar(){
+		alert("¡WAW!");
+	}
+	//Getters y Setters
+	set setRaza(newName){
+		this.raza = newName;
+	}
+
+	get getRaza(){
+		return this.raza;
+	}
+}
+
+const gato = new animal("Gato", 4, "Gris");
+const perro = new dog("Perro", 3, "Negro", "Pincher");
+const ave = new animal("Ave", 5, "Blanco");
+perro.setRaza = "Cocker";
+document.write(perro.getRaza);
+gato.verInfo();
+perro.ladrar();
+ave.verInfo();
+
 // Ejercico
 
 class celulares {
@@ -128,7 +172,6 @@ class App{
 		`;
 	}
 }
-
 app = new App("18.000 Mil", "3 Estrella", "900MB");
 app2 = new App("50.000 Mil", "4 Estrella", "1GB");
 app3 = new App("20.000 Mil", "3 Estrella", "700MB");
